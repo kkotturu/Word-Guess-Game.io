@@ -1,0 +1,41 @@
+body{
+    background-color: #e7e775;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    color:black;
+    font-family: Times New Roman, Times, "serif";
+}
+
+.container{
+    padding: 20px;
+    margin-left: 50px;
+}
+
+.header{
+    font-size: 28px;
+    font-weight:900;
+}
+
+#wins{
+    color:green;
+    font-weight:bold;
+}
+
+#losses{
+    color: red;
+    font-weight:bold;
+}
+
+#currentWord{
+     color: blue;
+     font-weight:bold;         
+}   
+
+#guessesRemaining{
+    color: #700e8e;
+    font-weight:bold;
+}
+
+#lettersGuessed{
+    color:magenta;
+    font-weight:bold;
+}
