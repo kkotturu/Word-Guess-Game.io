@@ -35,7 +35,7 @@ var game = {
     currentWord: null,
 
     // Randomly chooses a choice from the countries array - Does this need to be set as a variable or run as a function???
-    randomTeam: function () {
+    randomCountry: function () {
         return this.countries[Math.floor(Math.random() * this.countries.length)]
     },
 
@@ -46,8 +46,8 @@ var lost = new Audio("assets/audio/lost.mp3");
 // When the window loads...
 window.onload = function () {
 
-    // Converts 'randomTeam' to an array and assigns array to 'currentWord'
-    currentWord = (game.randomTeam()).split('');
+    // Converts 'randomCountry' to an array and assigns array to 'currentWord'
+    currentWord = (game.randomCountry()).split('');
 
     // Pushes '_' into 'underscores' array x times based on length of 'currentWord' array
     for (i = 0; i < currentWord.length; i++) {
@@ -91,7 +91,7 @@ window.onload = function () {
                 game.remainingGuesses = 10; // Resets guesses
                 game.lettersGuessed = []; // Clear the lettersGuessed array
                 game.underscores = []; // Clear underscores array
-                currentWord = (game.randomTeam()).split('');
+                currentWord = (game.randomCountry()).split('');
                 lost.play();
 
                 for (i = 0; i < currentWord.length; i++) {
@@ -126,7 +126,7 @@ window.onload = function () {
             game.remainingGuesses = 10; // Resets guesses
             game.lettersGuessed = []; // Clear the lettersGuessed array
             game.underscores = []; // Clear underscores array
-            currentWord = (game.randomTeam()).split('');
+            currentWord = (game.randomCountry()).split('');
             win.play();
 
 
@@ -145,7 +145,7 @@ window.onload = function () {
             game.remainingGuesses = 10; // Resets guesses
             game.lettersGuessed = []; // Clear the lettersGuessed array
             game.underscores = [];
-            currentWord = (game.randomTeam()).split('');
+            currentWord = (game.randomCountry()).split('');
 
             for (i = 0; i < currentWord.length; i++) { // Sets underscores
                 game.underscores.push("_");
