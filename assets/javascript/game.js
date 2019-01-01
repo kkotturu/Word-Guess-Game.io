@@ -14,12 +14,12 @@
 // Game ends when:
 // - All letters in random word are guessed 
 // Add 1 to "Wins" total
-// Reset guesses to max amount
+// Reset guesses to max count
 // Reset letters already guessed
 // Computer chooses new random word from the array
 // - Guesses remaining = 0
 // Add 1 to "Losses" total
-// Reset guesses to max amount
+// Reset guesses to max count
 // Reset letters already guessed
 // Computer chooses new random word from the array
 
